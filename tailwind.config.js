@@ -12,10 +12,10 @@ module.exports = {
       },
       backgroundImage: {
       
-        'sky1': "url('/images2/motion_sky1.gif')",
-        'sky2': "url('/images2/motion_sky2.gif')",
-        'sky3': "url('/images2/motion_sky3.gif')",
-        'sky4': "url('/images2/motion_sky4.gif')",
+       
+      },
+      minWidth:{
+        "min-350px": "350px"
       },
     },
   },

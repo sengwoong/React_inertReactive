@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
-import motion_sky1 from "@/../../public/images2/motion_sky1.gif";
 
 function Page() {
   const [scrollPercent, setScrollPercent] = useState(0);
