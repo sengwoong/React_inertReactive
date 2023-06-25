@@ -69,15 +69,32 @@ const page = () => {
     }
 
     async function scrollMove(moveY) {
-      await window.scrollTo({
+      window.scrollTo({
         top: moveY,
-        behavior: "smooth", // 스무스 스크롤 옵션
+        behavior: "smooth",
+      });
+
+      setTimeout(() => {}, 2000);
+      Animation = false;
+      await new Promise((resolve) => {
+        const checkElementVisibility = () => {
+          if (winScrollTop < moveY && winScrollTop > 0) {
+            Animation = true;
+            resolve();
+          } else {
+            setTimeout(checkElementVisibility, 10);
+            Animation = false;
+          }
+        };
+
+        checkElementVisibility();
       });
     }
+
     if (isMac) {
       window.addEventListener(
         "wheel",
-        debounce(function (e) {
+        function (e) {
           if (
             winScrollTop >= sectionMainOneTop &&
             winScrollTop < sectionMainThreeTop
@@ -87,32 +104,35 @@ const page = () => {
 
           var delta = e.deltaY;
           console.log(Animation);
-          if (!Animation) {
-            moveSection(delta);
-          }
-        }, 100),
+          setTimeout(() => {
+            if (!Animation) {
+              moveSection(delta);
+            }
+          }, 100);
+        },
         { passive: false }
       );
-    } else {
-      var beforeScroll = -1;
-      window.addEventListener(
-        "scroll",
-        debounce(function () {
-          var delta = 0;
-          if (beforeScroll > window.pageYOffset) {
-            delta = -1;
-          } else {
-            delta = 1;
-          }
-
-          if (!Animation) {
-            requestAnimationFrame(moveSection(delta));
-          }
-          beforeScroll = window.pageYOffset;
-        }, 100),
-        false
-      );
     }
+    //  else if(!Animation) {
+    //   var beforeScroll = -1;
+    //   window.addEventListener(
+    //     "scroll",
+    //     debounce(function () {
+    //       var delta = 0;
+    //       if (beforeScroll > window.pageYOffset) {
+    //         delta = -1;
+    //       } else {
+    //         delta = 1;
+    //       }
+
+    //       if (!Animation) {
+    //         requestAnimationFrame(moveSection(delta));
+    //       }
+    //       beforeScroll = window.pageYOffset;
+    //     }, 100),
+    //     false
+    //   );
+    // }
 
     return () => {
       if (isMac) {
