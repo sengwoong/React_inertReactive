@@ -1,0 +1,146 @@
+/* common */
+.wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.com_tit01 {
+  font-family: "NotoB";
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.com_txt01 {
+  max-width: 70%;
+  margin: 0 auto;
+  font-family: "NotoR";
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.tb_row {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.tb_row .tb_cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* 텍스트 오버랩 효과 */
+.section_textmask {
+  overflow: hidden;
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 210px;
+  background: #000;
+}
+
+.section_textmask .txt_area {
+}
+
+.section_textmask .txt_area .tit_wrap {
+}
+
+.section_textmask .txt_area .motion_area {
+  position: relative;
+  margin-top: 100px;
+  font-size: 150px;
+  line-height: 1;
+  color: #fff;
+}
+
+.section_textmask .txt_area .motion_area .text_box {
+  overflow: hidden;
+  text-align: center;
+}
+
+.section_textmask .txt_area .motion_area .text_box .left {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.section_textmask .txt_area .motion_area .text_box .left p {
+  width: 200%;
+  color: #fff;
+}
+
+.section_textmask .txt_area .motion_area .text_box .left p span {
+  display: inline-block;
+  padding-bottom: 5px;
+  text-align: center;
+  white-space: nowrap;
+  animation: move_text_mask 2.2s 1 both ease-in-out paused;
+}
+
+.section_textmask.active .txt_area .motion_area .text_box .left p span {
+  animation-play-state: running;
+}
+
+.section_textmask .txt_area .motion_area .text_box .right {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.section_textmask .txt_area .motion_area .text_box .right p {
+  width: 200%;
+  margin-left: -100%;
+  color: #00b8ff;
+}
+
+.section_textmask .txt_area .motion_area .text_box .right p span {
+  display: inline-block;
+  padding-bottom: 5px;
+  text-align: center;
+  white-space: nowrap;
+  animation: move_text_mask 2.2s 1 both ease-in-out paused;
+}
+
+.section_textmask.active .txt_area .motion_area .text_box .right p span {
+  animation-play-state: running;
+}
+
+.section_textmask .txt_area .motion_area .text_box.type02 {
+}
+
+.section_textmask .txt_area .motion_area .text_box.type02 span {
+  animation-delay: 0.3s !important;
+}
+
+.section_textmask .txt_area .motion_area .text_box.type02 .left p {
+  color: #00b8ff;
+}
+
+.section_textmask .txt_area .motion_area .text_box.type02 .right p {
+  color: #fff;
+}
+
+.section_textmask .txt_area .motion_area .text_box.type03 span {
+  animation-delay: 0.6s !important;
+}
+
+@keyframes move_text_mask {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

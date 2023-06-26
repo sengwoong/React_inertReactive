@@ -1,0 +1,125 @@
+/* common */
+.wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.com_tit01 {
+  font-family: "NotoB";
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.com_txt01 {
+  max-width: 70%;
+  margin: 0 auto;
+  font-family: "NotoR";
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.tb_row {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.tb_row .tb_cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* 오늘 날짜 카운트 */
+.section_today {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  background: #000;
+  text-align: center;
+}
+
+.section_today .date_box {
+  height: 100%;
+}
+
+.section_today .date_box .t_date {
+  position: absolute;
+  left: 20px;
+  top: 400px;
+  z-index: 100;
+  font-size: 300px;
+  color: #fff;
+  opacity: 0.1;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  transition: transform 1s;
+}
+
+.section_today.active .date_box .t_date {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+}
+
+.section_today .date_box .date_count {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  opacity: 0;
+  transition: opacity 0.5s 1s;
+}
+
+.section_today.active .date_box .date_count {
+  opacity: 1;
+}
+
+.section_today .date_box .date_count:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.section_today .date_box .date_count .count_box {
+  float: left;
+  animation: count_date 2.8s 1 ease-out both paused;
+}
+
+.section_today .date_box .date_count .count_box.active {
+  animation-play-state: running;
+}
+
+.section_today .date_box .date_count .count_box span {
+  display: block;
+  height: 200px;
+  color: #fff;
+  font-size: 200px;
+  line-height: 1;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 6px #fff;
+}
+
+@keyframes count_date {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-4800px); /* 높이 x 롤링될 개수로 구한값 */
+  }
+}

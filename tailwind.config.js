@@ -17,6 +17,44 @@ module.exports = {
       minWidth:{
         "min-350px": "350px"
       },
+
+
+
+      animation: {
+        move: "move 3s forwards",
+        moveAfter: "move 3s forwards",
+
+      },
+      animation: {
+        move: "move 3s forwards",
+        moveAfter: "moveAfter 3s forwards",
+      },
+      keyframes: {
+        move: {
+          "0%": {
+            transform: "translateX(-60px)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        moveAfter: {
+          "0%": {
+            transform: "translateX(-60px)",
+            width: "103%",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            width: "0%",
+          },
+        },
+      },
+      
+
+    
+
+
+
     },
   },
   plugins: [],
