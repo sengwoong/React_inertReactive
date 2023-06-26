@@ -1,0 +1,13 @@
+@keyframes fadeOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 3s ease forwards;
+}

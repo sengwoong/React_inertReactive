@@ -6,6 +6,7 @@ import CountDate from "./CountDate.jsx";
 import CountChar from "./CountChar.jsx";
 import ImageBox from "./ImageBox.jsx";
 import MovingImage from "./MovingImage.jsx";
+import BackGoundAnimation from "./BackGoundAnimation.jsx";
 function Page() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -64,6 +65,7 @@ function Page() {
       <CountChar></CountChar>
       <ImageBox></ImageBox>
       <MovingImage></MovingImage>
+      <BackGoundAnimation></BackGoundAnimation>
     </div>
   );
 }

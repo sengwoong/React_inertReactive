@@ -21,57 +21,58 @@ function MovingImage() {
       <div className="flex justify-around">
         <div>
           <div className="relative w-64  h-40">
-            <li
+            <div
               className={`${
-                animate ? "animate-move" : ""
+                animate ? "animate-moveX" : ""
               }  absolute top-20 right-10 bg-red-500 w-full h-full`}
-            ></li>
-            <li
+            ></div>
+            <div
               className={`${
                 animate ? "animate-moveAfter" : ""
               }  absolute top-20 right-10 bg-white   h-full`}
-            ></li>
+            ></div>
           </div>
 
           <div className="relative w-64  h-40">
-            <li
+            <div
               className={`${
-                animate ? "animate-move" : ""
+                animate ? "animate-moveX" : ""
               }  absolute top-52 right-10 bg-red-500 w-full h-full`}
-            ></li>
-            <li
+            ></div>
+            <div
               className={`${
                 animate ? "animate-moveAfter" : ""
               }  absolute top-52 right-10 bg-white   h-full`}
-            ></li>
+            ></div>
           </div>
         </div>
 
         <div>
           <div className="relative w-64  h-40">
-            <li
+            <div
               className={`${
-                animate ? "animate-move" : ""
+                animate ? "animate-moveX" : ""
               }  absolute top-20 left-10 bg-red-500 w-full h-full`}
-            ></li>
-            <li
+            ></div>
+            <div
               className={`${
                 animate ? "animate-moveAfter" : ""
               }  absolute top-20 left-10 bg-white   h-full`}
-            ></li>
+            ></div>
           </div>
 
           <div className="relative w-64  h-40">
-            <li
+            <div
+              className={`
+          
+                absolute top-52 left-10 bg-red-500 w-full h-full `}
+            ></div>
+
+            <div
               className={`${
-                animate ? "animate-move" : ""
-              }  absolute top-52 left-10 bg-red-500 w-full h-full`}
-            ></li>
-            <li
-              className={`${
-                animate ? "animate-moveAfter" : ""
-              }  absolute top-52 left-10 bg-white   h-full`}
-            ></li>
+                animate ? "animate-moveAfterTop" : ""
+              }  absolute top-52 left-10 bg-white   w-full`}
+            ></div>
           </div>
         </div>
       </div>
