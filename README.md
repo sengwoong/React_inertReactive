@@ -12,4 +12,12 @@ ch08 시간올리기 글자 올리기 <br>
 ![aaa](https://github.com/sengwoong/React_inertReactive/assets/92924243/3f9e38b6-ee6b-4942-9398-842ed4def07a)
 ![ass](https://github.com/sengwoong/React_inertReactive/assets/92924243/d4df19b1-89d5-425c-a05e-bbc9a1560876)
 ![asd](https://github.com/sengwoong/React_inertReactive/assets/92924243/3775ae40-d1ac-4051-bce9-67dc9489095b)
-![asde](https://github.com/sengwoong/React_inertReactive/assets/92924243/0732bc37-a41e-4f69-97b8-0ed43f1df08c)
+![asde](https://github.com/sengwoong/React_inertReactive/assets/92924243/0732bc37-a41e-4f69-97b8-0ed43f1df08c)<br>
+.section_textmask .txt_area .motion_area .text_box .left p span {display:inline-block; padding-bottom:5px; text-align: center; white-space: nowrap; animation:move_text_mask 2.2s 1 both ease-in-out paused;}
+에니메이션중 햇깔린부분정리
+<br>
+normal: 애니메이션이 한 번 실행된 후에 애니메이션의 첫 번째 프레임 스타일로 돌아갑니다.<br>
+reverse: 애니메이션이 실행된 후에 애니메이션을 역순으로 되감습니다.<br>
+alternate: 애니메이션이 한 번 실행된 후에 역순으로 실행됩니다. 이 과정이 반복됩니다.<br>
+alternate-reverse: alternate와 유사하지만, 처음부터 역순으로 시작합니다.<br>
+both: 애니메이션이 한 번 실행된 후에 애니메이션의 첫 번째 프레임 스타일로 돌아가면서, 애니메이션을 역순으로 실행합니다. 이 과정이 반복됩니다.<br>
