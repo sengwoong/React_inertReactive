@@ -9,3 +9,5 @@ ch06 스크롤모션기본 <br>
 ch07 버튼 그래픽  <br>
 ch08 시간올리기 글자 올리기 <br>
 ![aaa](https://github.com/sengwoong/React_inertReactive/assets/92924243/3f9e38b6-ee6b-4942-9398-842ed4def07a)
+![ass](https://github.com/sengwoong/React_inertReactive/assets/92924243/d4df19b1-89d5-425c-a05e-bbc9a1560876)
+![asd](https://github.com/sengwoong/React_inertReactive/assets/92924243/3775ae40-d1ac-4051-bce9-67dc9489095b)
