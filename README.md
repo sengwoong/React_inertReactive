@@ -21,3 +21,4 @@ reverse: 애니메이션이 실행된 후에 애니메이션을 역순으로 되
 alternate: 애니메이션이 한 번 실행된 후에 역순으로 실행됩니다. 이 과정이 반복됩니다.<br>
 alternate-reverse: alternate와 유사하지만, 처음부터 역순으로 시작합니다.<br>
 both: 애니메이션이 한 번 실행된 후에 애니메이션의 첫 번째 프레임 스타일로 돌아가면서, 애니메이션을 역순으로 실행합니다. 이 과정이 반복됩니다.<br>
+![jj](https://github.com/sengwoong/React_inertReactive/assets/92924243/1b0a8f83-c6f1-4e10-a8ef-35ea7b319288)
