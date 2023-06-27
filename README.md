@@ -26,6 +26,5 @@ alternate-reverse: alternate와 유사하지만, 처음부터 역순으로 시�
 both: 애니메이션이 한 번 실행된 후에 애니메이션의 첫 번째 프레임 스타일로 돌아가면서, 애니메이션을 역순으로 실행합니다. 이 과정이 반복됩니다.<br><br>
 ch09  커튼효과 <br>
 
-![ch09](https://github.com/sengwoong/React_inertReactive/assets/92924243/3a63f6c7-6b2d-48c5-a09b-963ed748e803)
-
+![ㅁㅁ](https://github.com/sengwoong/React_inertReactive/assets/92924243/976f42d1-bdd9-4251-ba20-4b91e4af0ae7)
 
