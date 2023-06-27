@@ -7,6 +7,8 @@ ch04 fermer 배경화면 변경<br>
 ch05 스크롤적게했을때이동(디바운스) (스크롤을 막고 시도하는것도 가능하나 버퍼링이걸린다. js 는 똑같은 코드에도 가능하다 성능게선을 계속해보고있다.)<br>
 ch06 스크롤모션기본 <br>
 ch07 버튼 그래픽  <br>
+https://www.youtube.com/watch?v=u9nVKzt9KSg&ab_channel=dhdjdj
+(유튜브에있습니다.)
 ch08 시간올리기 글자 올리기 <br>
 (html->react)<br>
 ![aaa](https://github.com/sengwoong/React_inertReactive/assets/92924243/3f9e38b6-ee6b-4942-9398-842ed4def07a)<br>
@@ -23,6 +25,7 @@ alternate: 애니메이션이 한 번 실행된 후에 역순으로 실행됩니
 alternate-reverse: alternate와 유사하지만, 처음부터 역순으로 시작합니다.<br>
 both: 애니메이션이 한 번 실행된 후에 애니메이션의 첫 번째 프레임 스타일로 돌아가면서, 애니메이션을 역순으로 실행합니다. 이 과정이 반복됩니다.<br><br>
 ch09  커튼효과 <br>
+
 ![ch09](https://github.com/sengwoong/React_inertReactive/assets/92924243/3a63f6c7-6b2d-48c5-a09b-963ed748e803)
 
 
