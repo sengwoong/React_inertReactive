@@ -33,6 +33,7 @@ ch09  커튼효과 <br>
 ![ㅁㅁ](https://github.com/sengwoong/React_inertReactive/assets/92924243/976f42d1-bdd9-4251-ba20-4b91e4af0ae7)
 
 <br>
+ch10 액자에서 갈아끼기
 
 ![ㅁㅁㅁㅁㅁ](https://github.com/sengwoong/React_inertReactive/assets/92924243/20a45023-5c85-424a-a9ce-63887a286743)
 
